@@ -32,7 +32,7 @@
 
       // Fetch the affiliate link from the Google Apps Script Web App
       try {
-        const response = await fetch(`https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec?email=${email}`);
+        const response = await fetch(`https://script.google.com/macros/s/AKfycbwHEIahZgb1uRv3-khLBMD5y6POohDKD80JhcDhEzVJETBwYQdz9h28rJcfrn9w6uXk/exec?email=${email}`);
         const data = await response.json();
 
         if (data.success && data.affiliateLink) {
